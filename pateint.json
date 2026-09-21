@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "age": 28,
+        "weight_kg": 72,
+        "bmi": 23.5
+    },
+    {
+        "id": 2,
+        "name": "Priya Sharma",
+        "age": 34,
+        "weight_kg": 65,
+        "bmi": 21.8
+    },
+    {
+        "id": 3,
+        "name": "Ahmed Khan",
+        "age": 45,
+        "weight_kg": 80,
+        "bmi": 26.1
+    },
+    {
+        "id": 4,
+        "name": "Maria Lopez",
+        "age": 52,
+        "weight_kg": 70,
+        "bmi": 24.2
+    },
+    {
+        "id": 5,
+        "name": "David Smith",
+        "age": 39,
+        "weight_kg": 90,
+        "bmi": 28.4
+    }
+]

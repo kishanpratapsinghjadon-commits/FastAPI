@@ -1,0 +1,23 @@
+from fastapi import FastAPI
+import json
+
+app = FastAPI()
+
+def load_data():
+    with open('pateint.json' , 'r') as f:
+            data = json.load(f)
+
+    return data 
+
+@app.get("/")
+def hello():
+    return {"Pateint management system API"}
+
+@app.get("/about")
+def lnct():
+    return {"A fully funtional Api to manage pateint records"}
+
+@app.get('/view')
+def view():
+    data=load_data()
+    return data
