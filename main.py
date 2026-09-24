@@ -14,10 +14,20 @@ def hello():
     return {"Pateint management system API"}
 
 @app.get("/about")
-def lnct():
+def about():
     return {"A fully funtional Api to manage pateint records"}
 
 @app.get('/view')
 def view():
     data=load_data()
     return data
+
+@app.get('/pateint/{pateint_id}')
+def view_pateint(pateint_id: int):
+    data = load_data()
+
+    for pateint in data:
+        if pateint.get("id") == pateint_id:
+            return pateint
+    return {'error': 'pateint data not found'}
+
