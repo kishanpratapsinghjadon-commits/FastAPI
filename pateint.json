@@ -4,6 +4,7 @@
         "name": "John Doe",
         "age": 28,
         "weight_kg": 72,
+        "height":5.7,
         "bmi": 23.5
     },
     {
@@ -11,6 +12,7 @@
         "name": "Priya Sharma",
         "age": 34,
         "weight_kg": 65,
+        "height":5.3,
         "bmi": 21.8
     },
     {
@@ -18,6 +20,7 @@
         "name": "Ahmed Khan",
         "age": 45,
         "weight_kg": 80,
+        "height":6,
         "bmi": 26.1
     },
     {
@@ -25,6 +28,7 @@
         "name": "Maria Lopez",
         "age": 52,
         "weight_kg": 70,
+        "height":5.8,
         "bmi": 24.2
     },
     {
@@ -32,6 +36,7 @@
         "name": "David Smith",
         "age": 39,
         "weight_kg": 90,
+        "height":5.5,
         "bmi": 28.4
     }
 ]
