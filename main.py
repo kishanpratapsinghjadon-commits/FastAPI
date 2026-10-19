@@ -96,7 +96,7 @@ def create_pateint(pateint:pateint):
     return JSONResponse(status_code=201 , content={'message': 'pateint created succesfully'})
 
 @app.put('/edit/{pateint_id}')
-def update_pateint(pateint_id: int , pateint_update: pateint_update):
+def update_pateint(pateint_id: str , pateint_update: pateint_update):
 
      data = load_data()
 
@@ -123,3 +123,19 @@ def update_pateint(pateint_id: int , pateint_update: pateint_update):
      save_data(data)
 
      return JSONResponse(status_code=200 , content={'message':'pateint updated'})
+
+
+@app.delete('/delete/{pateint_id}')
+def delete_pateint(pateint_id:str):
+
+    data = load_data()
+    patient_key = str(pateint_id)
+
+    if patient_key not in data:
+        raise HTTPException(status_code=404, detail='pateint not found')
+
+    del data[patient_key]
+
+    save_data(data)
+
+    return JSONResponse(status_code=200, content={'message':'pateint deleted'})
